@@ -5,5 +5,18 @@ Você possui um array de notas de alunos: [8.5, 3.7, 6.9, 7.0, 5.2].
 Peça para o usuário adicionar uma nova nota. Depois, usando for...of, conte quantos alunos foram aprovados, considerando que a nota de corte estabelecida foi 6.0.
 Exiba o número total de alunos aprovados.
     */
-
+let alunos =[8.5, 3.7, 6.9, 7.0, 5.2];
+let nova = Number(prompt("Adicione uma nova nota.").trim());
+alunos.push(nova);
+const aprovados = []
+const reprovados = []
+for(let nota of alunos){
+if(nota >= 6){
+ aprovados.push(nota)
+}else{
+    reprovados.push(nota)
+}
+}
+document.write(`Os alunos aprovados foram ${aprovados}`);
+document.write(`Os alunos reprovados foram ${reprovados}`)
 </script>
