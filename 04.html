@@ -9,7 +9,11 @@ Apresente para o usuário qual é a palavra mais longa contida no Array.
 let palavras = ['javascript', 'html', 'css', 'desenvolvimento', 'web'];
 let nome = prompt(`Escreva seu próprio nome`).toLocaleLowerCase().trim();
 palavras.push(nome)
+let maior = ``;
 for(let tamanho of palavras){
-  if(tamanho.length)
+  if(tamanho.length > maior.length){
+    maior = tamanho;
+  }
 }
+document.write(`A palavra mais longa é ${maior}`);
 </script>
