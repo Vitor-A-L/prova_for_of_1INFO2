@@ -7,7 +7,7 @@ Peça para o usuário inserir o seu próprio nome.
 Valide se o nome inserido pelo usuário consta na lista, retornando para o usuário se ele está cadastrado ou não.
     */
 let usuariosCadastrados = ['admin', 'julia', 'pedro', 'lucas'];
-const usuário = prompt(`Você está cadastrado?(caso sim escreva seu log)`).toLowerCase.trim();
+const usuário = prompt(`Você está cadastrado?(caso sim escreva seu log)`).toLowerCase().trim();
 for(let verficador of usuariosCadastrados){
     if(verficador === (usuário)){
 alert(`Você está cadastrado`);
