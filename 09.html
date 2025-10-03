@@ -7,13 +7,13 @@ Porém os produtos disponíveis no mercado são:
 const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
 Apresente para o usuário quais itens ele conseguirá comprar no mercado.
     */
-let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
-let itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
-let total = [];
-for(let compra of listaDeCompras){
-    if(itensDisponiveis.includes(compra)){
-        total.push(compra);
+    let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
+    let itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
+    let total = [];
+    for (let compra of listaDeCompras) {
+        if (itensDisponiveis.includes(compra)) {
+            total.push(compra);
+        }
     }
-}
-document.write(`Você consiguirá comprar ${total}`);
+    document.write(`Você consiguirá comprar ${total}`);
 </script>
